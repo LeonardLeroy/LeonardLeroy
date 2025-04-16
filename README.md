@@ -22,12 +22,18 @@ Currently focused on learning, building and growing in tech!
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&theme=tokyonight)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&theme=tokyonight)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&theme=radical&cache_seconds=3600)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&theme=radical&cache_seconds=3600)
+
+![Profile Views](https://komarev.com/ghpvc/?username=LeonardLeroy&color=blueviolet&style=flat)
 
 ---
 
 ## 📬 Contact Me
 
-📧 **Email:** [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)  
-💼 **LinkedIn:** [linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
+📧 **Email:**  
+[leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
+
+💼 **LinkedIn:**  
+[linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
