@@ -37,8 +37,6 @@ Currently focused on learning, building and growing in tech!
 
 ## 📬 Contact Me
 
-📧 **Email:**  
-[leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
+📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
 
-💼 **LinkedIn:**  
-[linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
+💼 **LinkedIn:**  [linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
