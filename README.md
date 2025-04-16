@@ -6,18 +6,10 @@
     </a>
 </p>
 
-## 🚀 About Me
-
 I'm Léonard Leroy, a **1st-year student at EPITECH Lyon**, passionate about **artificial intelligence** and exploring the world of **low-level development**.  
-Currently focused on learning — and fixing bugs at line 42! <a href="https://github.com/DenverCoder1/readme-typing-svg">
-        <img
-            src="https://readme-typing-svg.demolab.com/?lines=help%20&font=Fira%20Code&center=true&width=40&height=10&color=f75c7e&vCenter=true&pause=100&size=10"
-        />
-    </a>
+Currently focused on learning — and fixing bugs at line 42!
 
 ---
-
-## 🛠️ Tech Stack
 
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white)
@@ -35,17 +27,12 @@ Currently focused on learning — and fixing bugs at line 42! <a href="https://g
 
 ---
 
-## 📊 GitHub Stats
-
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&theme=radical&cache_seconds=3600)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&theme=radical&cache_seconds=3600)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=LeonardLeroy&color=blueviolet&style=flat)
 
 ---
-
-## 📬 Contact Me
 
 📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
 
