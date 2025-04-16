@@ -1,9 +1,19 @@
-# Hi there, I'm Léonard Leroy! 👋
+<p align="center">
+    <a href="https://github.com/DenverCoder1/readme-typing-svg">
+        <img
+            src="https://readme-typing-svg.demolab.com/?lines=EPITECH%20Student&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22"
+        />
+    </a>
+</p>
 
 ## 🚀 About Me
 
-I'm a **1st-year student at EPITECH Lyon**, passionate about **Artificial Intelligence** and exploring the world of **low-level development** and **problem solving**.  
-Currently focused on learning, building and growing in tech!
+I'm Léonard Leroy, a **1st-year student at EPITECH Lyon**, passionate about **artificial intelligence** and exploring the world of **low-level development**.  
+Currently focused on learning — and fixing bugs at line 42! <a href="https://github.com/DenverCoder1/readme-typing-svg">
+        <img
+            src="https://readme-typing-svg.demolab.com/?lines=help%20&font=Fira%20Code&center=true&width=40&height=10&color=f75c7e&vCenter=true&pause=100&size=10"
+        />
+    </a>
 
 ---
 
@@ -40,4 +50,3 @@ Currently focused on learning, building and growing in tech!
 📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
 
 💼 **LinkedIn:**  [linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
-
