@@ -27,7 +27,7 @@ Currently focused on learning — and fixing bugs at line 42!
 
 ---
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&theme=radical&cache_seconds=3600)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&theme=radical&cache_seconds=1800)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&theme=radical&cache_seconds=3600)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=LeonardLeroy&color=blueviolet&style=flat)
