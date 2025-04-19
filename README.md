@@ -10,6 +10,7 @@ I'm Léonard Leroy, a **1st-year student at EPITECH Lyon**, passionate about **a
 Currently focused on learning — and fixing bugs at line 42!
 
 ---
+![Epitech](https://img.shields.io/badge/Epitech-3457A5?style=for-the-badge&logo=epitech&logoColor=white)
 
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white)
