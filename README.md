@@ -6,7 +6,7 @@
     </a>
 </p>
 
-I'm Léonard Leroy, a **1nd-year student at EPITECH Lyon**, passionate about **artificial intelligence** and exploring the world of **low-level development**.  
+I'm Léonard Leroy, a **2nd-year student at EPITECH Lyon**, passionate about **artificial intelligence** and exploring the world of **low-level development**.  
 Currently focused on learning — and fixing bugs at line 42!
 
 ---
