@@ -34,7 +34,7 @@ Currently focused on learning — and fixing bugs at line 42!
 
 ---
 
-🌐 **Email:**  [leonardleroy.me](https://leonardleroy.me/)
+🌐 **Website:**  [leonardleroy.me](https://leonardleroy.me/)
 
 📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
 
