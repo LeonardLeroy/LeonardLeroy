@@ -34,6 +34,19 @@ Currently focused on learning — and fixing bugs at line 42!
 
 ---
 
+<!-- Statistics: Programming languages -->
+<picture>
+  <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg#gh-dark-mode-only"  media="(prefers-color-scheme: dark)">
+  <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg">
+</picture>
+<!-- Statistics: General statistics -->
+<picture>
+  <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_general.svg#gh-dark-mode-only"  media="(prefers-color-scheme: dark)">
+  <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_general.svg">
+</picture>
+
+---
+
 🌐 **MyPortfolio:**  [leonardleroy.me](https://leonardleroy.me/)
 
 📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
