@@ -35,6 +35,7 @@ Currently focused on learning — and fixing bugs at line 42!
 <a href="https://github.com/LeonardLeroy">
     <img src="https://komarev.com/ghpvc/?username=LeonardLeroy&color=3643b5&style=flat" alt="Vues du profil" loading="lazy">
 </a>
+
 ---
 
 <!-- Statistics: Programming languages -->
