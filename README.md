@@ -32,6 +32,9 @@ Currently focused on learning — and fixing bugs at line 42!
 ![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=flat&logo=visual-studio-code&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
 
+<a href="https://github.com/LeonardLeroy">
+    <img src="https://komarev.com/ghpvc/?username=LeonardLeroy&color=3643b5&style=flat" alt="Vues du profil" loading="lazy">
+</a>
 ---
 
 <!-- Statistics: Programming languages -->
