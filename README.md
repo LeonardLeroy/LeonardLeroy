@@ -38,23 +38,18 @@ Currently focused on learning — and fixing bugs at line 42!
 
 ---
 
-<div align="center">
-  <table border="0">
-    <tr>
-      <td valign="top">
-        <picture>
-          <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg#gh-dark-mode-only" media="(prefers-color-scheme: dark)">
-          <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg" width="390">
-        </picture>
-      </td>
-      <td valign="top">
-        <a href="https://github.com/LeonardLeroy">
-          <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg" alt="Léonard's GitHub stats" width="390">
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
+<p align="center">
+  <a href="https://github.com/LeonardLeroy/GithubStats">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg#gh-dark-mode-only" media="(prefers-color-scheme: dark)">
+      <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg" width="385">
+    </picture>
+  </a>
+  
+  <a href="https://github.com/LeonardLeroy">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg" alt="Léonard's GitHub stats" width="385">
+  </a>
+</p>
 
 ---
 
