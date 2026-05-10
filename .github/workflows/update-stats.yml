@@ -28,9 +28,8 @@ jobs:
 
       - name: Update stats image
         shell: bash
-        # On télécharge tes stats via l'API et on les sauvegarde en .svg
         run: |-
-          curl -o ./.github/assets/images/stats_en.svg -LJ "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true"
+          curl -H "Accept: image/svg+xml" -o ./.github/assets/images/stats_en.svg -L "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
 
       - name: Commit and push
         shell: bash
