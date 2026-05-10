@@ -4,7 +4,6 @@ on:
   schedule:
     # Tous les jours à 01h00 du matin
     - cron: '0 1 * * *'
-  # Ceci permet de lancer le script manuellement depuis l'onglet Actions !
   workflow_dispatch:
 
 jobs:
@@ -14,7 +13,9 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Git configuration
         shell: bash
@@ -22,18 +23,23 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Create directory if not exists
+      - name: Select branch
         shell: bash
-        run: mkdir -p .github/assets/images
+        run: |-
+          git pull origin main
+          git checkout main
 
       - name: Update stats image
         shell: bash
         run: |-
-          curl -H "Accept: image/svg+xml" -o ./.github/assets/images/stats_en.svg -L "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
+          # On crée le dossier au cas où
+          mkdir -p ./.github/assets/images/
+          # L'ASTUCE : On ajoute -A "Mozilla..." pour ne pas être bloqué par le serveur
+          curl -o ./.github/assets/images/stats_en.svg -A "Mozilla/5.0" -L "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
 
       - name: Commit and push
         shell: bash
         run: |-
           git add -A
           git commit -m "[auto] Updated stats images" || exit 0
-          git push origin HEAD
+          git push origin main
