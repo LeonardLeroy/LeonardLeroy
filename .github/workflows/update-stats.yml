@@ -2,9 +2,8 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    # Tous les jours à 01h00 du matin
     - cron: '0 1 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Pour le lancer à la main
 
 jobs:
   update:
@@ -13,33 +12,24 @@ jobs:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v3
 
       - name: Git configuration
-        shell: bash
         run: |-
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Select branch
-        shell: bash
-        run: |-
-          git pull origin main
-          git checkout main
-
       - name: Update stats image
-        shell: bash
         run: |-
-          # On crée le dossier au cas où
           mkdir -p ./.github/assets/images/
-          # L'ASTUCE : On ajoute -A "Mozilla..." pour ne pas être bloqué par le serveur
-          curl -o ./.github/assets/images/stats_en.svg -A "Mozilla/5.0" -L "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
+          # On utilise un miroir stable (yurisuiko) au lieu de l'officiel qui sature
+          curl -L -o ./.github/assets/images/stats_en.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
+          
+      - name: Check file size
+        run: ls -lh ./.github/assets/images/stats_en.svg
 
       - name: Commit and push
-        shell: bash
         run: |-
-          git add -A
+          git add .github/assets/images/stats_en.svg
           git commit -m "[auto] Updated stats images" || exit 0
           git push origin main
