@@ -38,16 +38,15 @@ Currently focused on learning — and fixing bugs at line 42!
 
 ---
 
-<!-- Statistics: Programming languages -->
-<picture>
-  <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg#gh-dark-mode-only"  media="(prefers-color-scheme: dark)">
-  <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg">
-</picture>
-<!-- Statistics: General statistics -->
-<picture>
-  <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_general.svg#gh-dark-mode-only"  media="(prefers-color-scheme: dark)">
-  <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_general.svg">
-</picture>
+<p align="center">
+  <picture>
+    <source srcset="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg#gh-dark-mode-only" media="(prefers-color-scheme: dark)">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/GithubStats/main/output/stats_langs.svg" width="415">
+  </picture>
+  &nbsp; <a href="https://github.com/LeonardLeroy">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg" alt="Léonard's GitHub stats" width="415">
+  </a>
+</p>
 
 ---
 
