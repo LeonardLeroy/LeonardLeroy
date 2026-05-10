@@ -1,0 +1,40 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    # Tous les jours à 01h00 du matin
+    - cron: '0 1 * * *'
+  # Ceci permet de lancer le script manuellement depuis l'onglet Actions !
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Git configuration
+        shell: bash
+        run: |-
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create directory if not exists
+        shell: bash
+        run: mkdir -p .github/assets/images
+
+      - name: Update stats image
+        shell: bash
+        # On télécharge tes stats via l'API et on les sauvegarde en .svg
+        run: |-
+          curl -o ./.github/assets/images/stats_en.svg -LJ "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true"
+
+      - name: Commit and push
+        shell: bash
+        run: |-
+          git add -A
+          git commit -m "[auto] Updated stats images" || exit 0
+          git push origin HEAD
