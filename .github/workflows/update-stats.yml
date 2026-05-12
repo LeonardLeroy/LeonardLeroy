@@ -21,9 +21,11 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: .github/assets/images/langs_full.svg
-          base: ""
+          base: "" 
           plugin_languages: yes
           plugin_languages_limit: 0
           plugin_languages_details: percentage
+          plugin_languages_sections: most-used
+          plugin_languages_header: no
           config_timezone: Europe/Paris
           config_order: base.header, plugin.languages
