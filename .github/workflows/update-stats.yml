@@ -14,7 +14,7 @@ jobs:
       - name: Update GitHub Stats Image
         run: |-
           mkdir -p ./.github/assets/images/
-          curl -L -o ./.github/assets/images/stats.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
+          curl -L -o ./.github/assets/images/stats_en.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
 
       - name: Full Languages Only
         uses: lowlighter/metrics@latest
