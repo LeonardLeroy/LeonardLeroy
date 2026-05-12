@@ -23,7 +23,7 @@ jobs:
         run: |-
           mkdir -p ./.github/assets/images/
           curl -L -o ./.github/assets/images/stats_en.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
-          curl -L -o ./.github/assets/images/langs_en.svg "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&hide_border=true&theme=transparent&hide=html,css"
+          curl -L -o ./.github/assets/images/langs_en.svg "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&hide_border=true&theme=transparent&langs_count=15"
 
       - name: Check file sizes
         run: ls -lh ./.github/assets/images/
