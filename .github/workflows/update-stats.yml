@@ -1,47 +1,80 @@
 name: Update Stats and Metrics
+
 on:
-  schedule: [{cron: "0 1 * * *"}]
+  schedule:
+    - cron: "0 1 * * *"
   workflow_dispatch:
+
 jobs:
   update:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create assets directory
+        run: mkdir -p .github/assets/images
 
       - name: Update GitHub Stats Image
-        run: |-
-          mkdir -p ./.github/assets/images/
-          curl -L -o ./.github/assets/images/stats_en.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
+        run: |
+          curl -L \
+            "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent" \
+            -o .github/assets/images/stats_en.svg
 
-      - name: Full Languages Only
-        uses: lowlighter/metrics@latest
+      - name: Generate Languages Metrics
+        uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+
           filename: .github/assets/images/langs.svg
-          base: "" 
+
+          base: ""
+          config_timezone: Europe/Paris
+
           plugin_languages: yes
           plugin_languages_limit: 0
-          plugin_languages_details: percentage
           plugin_languages_sections: most-used
-          config_timezone: Europe/Paris
-          config_order: plugin.languages
+          plugin_languages_details: percentage
+
           extras_css: |
-            h2, .header, .title { display: none !important; }
-          output_action: none
+            h2, .header, .title {
+              display: none !important;
+            }
+
+      - name: Force file timestamp change
+        run: |
+          if [ -f .github/assets/images/stats_en.svg ]; then
+            echo "<!-- updated $(date) -->" >> .github/assets/images/stats_en.svg
+          fi
+
+          if [ -f .github/assets/images/langs.svg ]; then
+            echo "<!-- updated $(date) -->" >> .github/assets/images/langs.svg
+          fi
+
+      - name: Debug generated files
+        run: |
+          ls -lah .github/assets/images
+
+          if [ -f .github/assets/images/langs.svg ]; then
+            cat .github/assets/images/langs.svg | head
+          else
+            echo "langs.svg not found"
+          fi
 
       - name: Commit and push changes
-        run: |-
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          mkdir -p .github/assets/images/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add .github/assets/images/*.svg
-          
-          git commit -m "[auto] Update profile stats and languages" || echo "No changes to commit"
-          
+
+          git commit -m "[auto] Update profile stats and languages" || echo "No changes"
+
           git pull --rebase origin main
-          
-          git push origin main
+          git push
