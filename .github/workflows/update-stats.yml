@@ -30,6 +30,12 @@ jobs:
           config_order: plugin.languages
           extras_css: |
             h2, .header, .title { display: none !important; }
-          
-          committer_message: "[auto] Update profile stats and languages"
-          output_action: commit
+          output_action: none
+
+      - name: Commit and push changes
+        run: |-
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .github/assets/images/langs.svg .github/assets/images/stats_en.svg
+          git commit -m "[auto] Update profile stats and languages" || exit 0
+          git push
