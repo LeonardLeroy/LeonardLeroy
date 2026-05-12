@@ -3,7 +3,7 @@ name: Update GitHub Stats
 on:
   schedule:
     - cron: '0 1 * * *'
-  workflow_dispatch: # Pour le lancer à la main
+  workflow_dispatch: 
 
 jobs:
   update:
@@ -23,13 +23,13 @@ jobs:
         run: |-
           mkdir -p ./.github/assets/images/
           curl -L -o ./.github/assets/images/stats_en.svg "https://github-readme-stats-sigma-five.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent"
-          curl -L -o ./.github/assets/images/langs_en.svg "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&hide_border=true&theme=transparent"
-      
-      - name: Check file size
-        run: ls -lh ./.github/assets/images/stats_en.svg
+          curl -L -o ./.github/assets/images/langs_en.svg "https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=LeonardLeroy&layout=compact&hide_border=true&theme=transparent&hide=html,css"
+
+      - name: Check file sizes
+        run: ls -lh ./.github/assets/images/
 
       - name: Commit and push
         run: |-
-          git add .github/assets/images/stats_en.svg
-          git commit -m "[auto] Updated stats images" || exit 0
+          git add .github/assets/images/*.svg
+          git commit -m "[auto] Updated stats and languages images" || exit 0
           git push origin main
