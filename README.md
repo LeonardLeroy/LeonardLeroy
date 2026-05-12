@@ -39,12 +39,9 @@ Currently focused on learning — and fixing bugs at line 42!
 ---
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs_full.svg" width="400" align="top" alt="Languages">
   <a href="https://github.com/LeonardLeroy">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs_en.svg" width="385">
-  </a>
-  
-  <a href="https://github.com/LeonardLeroy">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg" alt="Léonard's GitHub stats" width="385">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg" width="385" align="top" alt="Léonard's GitHub stats">
   </a>
 </p>
 
