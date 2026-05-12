@@ -21,7 +21,6 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: langs.svg
-          path: .github/assets/images/
           base: "" 
           plugin_languages: yes
           plugin_languages_limit: 0
@@ -37,7 +36,11 @@ jobs:
         run: |-
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          mv /home/runner/work/_temp/metrics_renders/langs.svg .github/assets/images/langs.svg || mv langs.svg .github/assets/images/langs.svg || true
+          
           ls -R .github/assets/images/
+          
           git add .github/assets/images/*.svg
           git commit -m "[auto] Update stats and languages" || exit 0
           git push
