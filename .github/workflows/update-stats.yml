@@ -34,6 +34,12 @@ jobs:
           base: header, activity, community, repositories
           config_timezone: Europe/Paris
 
+          # sans ca, seuls les repos personnels sont pris en compte
+          repositories_affiliations: owner, collaborator, organization_member
+
+          # les commits sont signes avec l'adresse epitech, pas celle du compte
+          commits_authoring: leonard.leroy@epitech.eu, LeonardLeroy
+
           plugin_lines: yes
 
       - name: Generate Languages Metrics
