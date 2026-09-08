@@ -37,6 +37,13 @@ jobs:
           # sans ca, seuls les repos personnels sont pris en compte
           repositories_affiliations: owner, collaborator, organization_member
 
+          # 141 repos depassent la fenetre par defaut (100) : les repos
+          # perso en sortaient, d'ou stars/releases/licence a zero
+          repositories: 200
+
+          # par defaut seuls 4 repos sont analyses pour les lignes
+          plugin_lines_repositories_limit: 0
+
           # les commits sont signes avec l'adresse epitech, pas celle du compte
           commits_authoring: leonard.leroy@epitech.eu, LeonardLeroy
 
