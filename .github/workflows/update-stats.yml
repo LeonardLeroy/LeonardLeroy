@@ -59,6 +59,15 @@ jobs:
               display: none !important;
             }
 
+      # metrics ecrit ses rendus dans /metrics_renders (volume docker),
+      # pas dans le workspace du repo
+      - name: Collect renders
+        run: |
+          ls -laR /metrics_renders
+
+          cp /metrics_renders/.github/assets/images/stats_en.svg .github/assets/images/
+          cp /metrics_renders/.github/assets/images/langs.svg .github/assets/images/
+
       - name: Validate generated SVGs
         run: |
           ls -lah .github/assets/images
