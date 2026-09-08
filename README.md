@@ -1,55 +1,72 @@
 <p align="center">
-    <a href="https://github.com/DenverCoder1/readme-typing-svg">
-        <img
-            src="https://readme-typing-svg.demolab.com/?lines=EPITECH%20Student&font=Fira%20Code&center=true&width=440&height=45&color=f75c7e&vCenter=true&pause=1000&size=22"
-        />
-    </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header-dark.svg">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header.svg" alt="Léonard Leroy — Epitech Lyon, 2024—2026" width="880">
+  </picture>
 </p>
 
-I'm Léonard Leroy, a **3rd-year student at EPITECH Lyon**, passionate about **artificial intelligence** and exploring the world of **low-level development**.  
-Currently focused on learning — and fixing bugs at line 42!
+---
+
+### I · About
+
+I enjoy understanding in depth how a program works, even if it means taking it apart and rebuilding its logic to improve it.
+
+I gained practical experience during a five-month internship at **EDF**, where I developed applications answering real business needs. Alongside this, I am President of **Manta** (formerly Cobra), running day-long sessions where I guide middle-school and high-school students through a project to introduce them to programming.
 
 ---
-![Epitech](https://img.shields.io/badge/Epitech-3457A5?style=for-the-badge&logo=epitech&logoColor=white)
 
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat&logo=c&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120.svg?style=flat&logo=c-sharp&logoColor=white)
-![Python](https://img.shields.io/badge/Python-%2314354C.svg?style=flat&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-%234EAA25.svg?style=flat&logo=gnubash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE.svg?style=flat&logo=powershell&logoColor=white)
+### II · Stack
 
-![.NET](https://img.shields.io/badge/.NET-512BD4.svg?style=flat&logo=.net&logoColor=white)
-![WPF](https://img.shields.io/badge/WPF-0078D6.svg?style=flat&logo=windows&logoColor=white)
+**Languages** — C · C++ · C# · Python · Bash · PowerShell
 
-![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black)
+**Frameworks** — .NET · WPF · HTML · CSS · JavaScript
 
-![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white)
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=flat&logo=git&logoColor=white)
+**Environments** — Unix · Linux · Windows · Git · Vim · VS Code
 
-![Vim](https://img.shields.io/badge/Vim-%2311AB00.svg?style=flat&logo=vim&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=flat&logo=visual-studio-code&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=flat&logo=linux&logoColor=black)
-
-<a href="https://github.com/LeonardLeroy">
-    <img src="https://komarev.com/ghpvc/?username=LeonardLeroy&color=3643b5&style=flat" alt="Vues du profil" loading="lazy">
-</a>
+**Focus** — Unix systems programming · Parsing and interpreters · Real-time rendering · Optimization and profiling · Applied AI
 
 ---
+
+### III · Selected work
+
+**01 · [Zappy](https://github.com/LeonardLeroy/Zappy)** — Networked multiplayer strategy game over a custom text protocol. C++20 server driving the world simulation and every client, C++20/raylib GUI with 2D and 3D views plus session recording and replay, and a fully autonomous Python AI client.
+<sub>C++ · raylib · Python · ECS · Networking</sub>
+
+**02 · [42sh](https://github.com/LeonardLeroy/42sh)** — Fully functional Unix shell written in C. Advanced parsing, process handling, job control and custom built-ins.
+<sub>C · Parsing · Processes · Job control</sub>
+
+**03 · [Wolf3D](https://github.com/LeonardLeroy/Wolf3d)** — 2.5D game engine built from scratch in C. Procedural map generator, raycasting renderer, entity system for enemies and animations.
+<sub>C · Raycasting · Procedural generation</sub>
+
+**04 · [My_Radar](https://github.com/LeonardLeroy/My_Radar)** — High-performance 2D air traffic simulator. Collision detection optimized with spatial partitioning: 30,000+ simultaneous entities at 60 FPS.
+<sub>C · Spatial partitioning · 60 FPS</sub>
+
+---
+
+### IV · Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs.svg" width="400" align="top">
-  
-  <a href="https://github.com/LeonardLeroy">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg?v=2" width="385" align="top">
-  </a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs-dark.svg">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs.svg" alt="Most used languages" width="400" align="top">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en-dark.svg">
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg?v=3" alt="GitHub statistics" width="385" align="top">
+  </picture>
 </p>
 
 ---
 
-🌐 **MyPortfolio:**  [leonardleroy.me](https://leonardleroy.me/)
+### V · Contact
 
-📧 **Email:**  [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
+**Portfolio** — [leonardleroy.me](https://leonardleroy.me/)
 
-💼 **LinkedIn:**  [linkedin.com/in/leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
+**Email** — [leonard.leroy@epitech.eu](mailto:leonard.leroy@epitech.eu)
+
+**LinkedIn** — [leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
+
+<br>
+
+<sub>Lyon, France</sub>
+<img src="https://komarev.com/ghpvc/?username=LeonardLeroy&color=0f766e&style=flat&label=Views" alt="Profile views" align="right">
