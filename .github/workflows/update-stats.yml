@@ -21,11 +21,20 @@ jobs:
       - name: Create assets directory
         run: mkdir -p .github/assets/images
 
-      - name: Update GitHub Stats Image
-        run: |
-          curl -L \
-            "https://github-readme-stats.vercel.app/api?username=LeonardLeroy&show_icons=true&hide_border=true&theme=transparent" \
-            -o .github/assets/images/stats_en.svg
+      - name: Generate Stats Metrics
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          filename: .github/assets/images/stats_en.svg
+
+          # ecrit le fichier sans commit ni push : le step final s'en charge
+          output_action: none
+
+          base: header, activity, community, repositories
+          config_timezone: Europe/Paris
+
+          plugin_lines: yes
 
       - name: Generate Languages Metrics
         uses: lowlighter/metrics@v3.34
@@ -33,6 +42,9 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           filename: .github/assets/images/langs.svg
+
+          # ecrit le fichier sans commit ni push : le step final s'en charge
+          output_action: none
 
           base: ""
           config_timezone: Europe/Paris
@@ -47,25 +59,22 @@ jobs:
               display: none !important;
             }
 
-      - name: Force file timestamp change
-        run: |
-          if [ -f .github/assets/images/stats_en.svg ]; then
-            echo "<!-- updated $(date) -->" >> .github/assets/images/stats_en.svg
-          fi
-
-          if [ -f .github/assets/images/langs.svg ]; then
-            echo "<!-- updated $(date) -->" >> .github/assets/images/langs.svg
-          fi
-
-      - name: Debug generated files
+      - name: Validate generated SVGs
         run: |
           ls -lah .github/assets/images
 
-          if [ -f .github/assets/images/langs.svg ]; then
-            cat .github/assets/images/langs.svg | head
-          else
-            echo "langs.svg not found"
-          fi
+          for f in .github/assets/images/stats_en.svg .github/assets/images/langs.svg; do
+            if [ ! -s "$f" ]; then
+              echo "::error::$f is missing or empty"
+              exit 1
+            fi
+
+            if ! grep -q "</svg>" "$f"; then
+              echo "::error::$f is not a valid SVG:"
+              head -c 500 "$f"
+              exit 1
+            fi
+          done
 
       - name: Commit and push changes
         run: |
@@ -74,7 +83,10 @@ jobs:
 
           git add .github/assets/images/*.svg
 
-          git commit -m "[auto] Update profile stats and languages" || echo "No changes"
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
 
-          git pull --rebase origin main
+          git commit -m "[auto] Update profile stats and languages"
           git push
