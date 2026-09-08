@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="164" viewBox="0 0 880 164" role="img" aria-label="Léonard Leroy — Epitech Lyon 2024 à 2026">
+  <style>
+    .eyebrow {
+      font: 600 12px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      letter-spacing: 1.7px;
+      fill: #0f766e;
+    }
+    .name {
+      font: 600 46px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      letter-spacing: -1.6px;
+      fill: #0a0a0a;
+    }
+    .lede {
+      font: 400 14px Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      fill: #6b6b6b;
+    }
+    .rule { stroke: #e3e3e3; stroke-width: 1; }
+  </style>
+
+  <text class="eyebrow" x="1" y="26">EPITECH LYON · 2024—2026</text>
+  <text class="name" x="0" y="82">Léonard Leroy</text>
+
+  <line class="rule" x1="0" y1="112" x2="880" y2="112" />
+
+  <text class="lede" x="1" y="136">Unix systems programming · Parsing and interpreters · Real-time rendering · Applied AI</text>
+</svg>

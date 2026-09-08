@@ -21,7 +21,12 @@ jobs:
       - name: Create assets directory
         run: mkdir -p .github/assets/images
 
-      - name: Generate Stats Metrics
+      # ------------------------------------------------------------------
+      # Cartes de statistiques : une version claire, une version sombre.
+      # Le README les sert via <picture> selon le theme du visiteur.
+      # ------------------------------------------------------------------
+
+      - name: Generate Stats Metrics (light)
         uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -46,14 +51,87 @@ jobs:
 
           plugin_lines: yes
 
-      - name: Generate Languages Metrics
+          # palette leonardleroy.me : ink #0a0a0a, teal #0f766e, gris #6b6b6b
+          extras_css: |
+            svg {
+              font-family: Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, sans-serif;
+            }
+            h1, h2 {
+              color: #0f766e !important;
+              font-size: 12px !important;
+              font-weight: 600 !important;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
+              margin: 16px 0 6px !important;
+            }
+            .field { color: #0a0a0a; }
+            .field svg { fill: #6b6b6b !important; }
+            .added { color: #0f766e !important; }
+            .removed { color: #6b6b6b !important; }
+            :root {
+              --color-calendar-graph-day-bg: #f0faf8;
+              --color-calendar-graph-day-L1-bg: #99f6e4;
+              --color-calendar-graph-day-L2-bg: #5eead4;
+              --color-calendar-graph-day-L3-bg: #14b8a6;
+              --color-calendar-graph-day-L4-bg: #0f766e;
+            }
+
+      - name: Generate Stats Metrics (dark)
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          filename: .github/assets/images/stats_en-dark.svg
+
+          output_action: none
+
+          base: header, activity, community, repositories
+          config_timezone: Europe/Paris
+
+          plugin_lines_repositories_limit: 0
+          commits_authoring: leonard.leroy@epitech.eu, LeonardLeroy
+          plugin_lines: yes
+
+          # meme DA, transposee sur le fond sombre de GitHub (#0d1117) :
+          # le teal #0f766e n'y est pas lisible, on monte a #2dd4bf
+          extras_css: |
+            svg {
+              font-family: Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, sans-serif;
+            }
+            h1, h2 {
+              color: #2dd4bf !important;
+              font-size: 12px !important;
+              font-weight: 600 !important;
+              letter-spacing: 1.6px;
+              text-transform: uppercase;
+              margin: 16px 0 6px !important;
+            }
+            .field { color: #e6edf3 !important; }
+            .field svg { fill: #8b949e !important; }
+            .added { color: #2dd4bf !important; }
+            .removed { color: #8b949e !important; }
+            :root {
+              --color-calendar-graph-day-bg: #161b22;
+              --color-calendar-graph-day-L1-bg: #0f766e;
+              --color-calendar-graph-day-L2-bg: #14b8a6;
+              --color-calendar-graph-day-L3-bg: #5eead4;
+              --color-calendar-graph-day-L4-bg: #99f6e4;
+            }
+
+      # ------------------------------------------------------------------
+      # Repartition des langages. Les couleurs des langages restent celles
+      # de GitHub : ce sont des donnees, pas de la decoration.
+      # ------------------------------------------------------------------
+
+      - name: Generate Languages Metrics (light)
         uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
           filename: .github/assets/images/langs.svg
 
-          # ecrit le fichier sans commit ni push : le step final s'en charge
           output_action: none
 
           base: ""
@@ -68,6 +146,38 @@ jobs:
             h2, .header, .title {
               display: none !important;
             }
+            svg {
+              font-family: Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, sans-serif;
+            }
+            .field { color: #0a0a0a; }
+
+      - name: Generate Languages Metrics (dark)
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          filename: .github/assets/images/langs-dark.svg
+
+          output_action: none
+
+          base: ""
+          config_timezone: Europe/Paris
+
+          plugin_languages: yes
+          plugin_languages_limit: 0
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+
+          extras_css: |
+            h2, .header, .title {
+              display: none !important;
+            }
+            svg {
+              font-family: Inter, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, sans-serif;
+            }
+            .field { color: #e6edf3 !important; }
 
       # metrics ecrit ses rendus dans /metrics_renders (volume docker),
       # pas dans le workspace du repo
@@ -75,14 +185,15 @@ jobs:
         run: |
           ls -laR /metrics_renders
 
-          cp /metrics_renders/.github/assets/images/stats_en.svg .github/assets/images/
-          cp /metrics_renders/.github/assets/images/langs.svg .github/assets/images/
+          cp /metrics_renders/.github/assets/images/*.svg .github/assets/images/
 
       - name: Validate generated SVGs
         run: |
           ls -lah .github/assets/images
 
-          for f in .github/assets/images/stats_en.svg .github/assets/images/langs.svg; do
+          for name in stats_en stats_en-dark langs langs-dark; do
+            f=".github/assets/images/$name.svg"
+
             if [ ! -s "$f" ]; then
               echo "::error::$f is missing or empty"
               exit 1
