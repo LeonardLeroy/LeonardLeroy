@@ -8,23 +8,23 @@
  "Segoe UI", Roboto, sans-serif;
 }
 h1, h2 {
- color: #0f766e !important;
+ color: #2dd4bf !important;
  font-size: 12px !important;
  font-weight: 600 !important;
  letter-spacing: 1.6px;
  text-transform: uppercase;
  margin: 16px 0 6px !important;
 }
-.field { color: #0a0a0a; }
-.field svg { fill: #6b6b6b !important; }
-.added { color: #0f766e !important; }
-.removed { color: #6b6b6b !important; }
+.field { color: #e6edf3 !important; }
+.field svg { fill: #8b949e !important; }
+.added { color: #2dd4bf !important; }
+.removed { color: #8b949e !important; }
 :root {
- --color-calendar-graph-day-bg: #f0faf8;
- --color-calendar-graph-day-L1-bg: #99f6e4;
- --color-calendar-graph-day-L2-bg: #5eead4;
- --color-calendar-graph-day-L3-bg: #14b8a6;
- --color-calendar-graph-day-L4-bg: #0f766e;
+ --color-calendar-graph-day-bg: #161b22;
+ --color-calendar-graph-day-L1-bg: #0f766e;
+ --color-calendar-graph-day-L2-bg: #14b8a6;
+ --color-calendar-graph-day-L3-bg: #5eead4;
+ --color-calendar-graph-day-L4-bg: #99f6e4;
 }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
