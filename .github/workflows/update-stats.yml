@@ -34,12 +34,9 @@ jobs:
           base: header, activity, community, repositories
           config_timezone: Europe/Paris
 
-          # sans ca, seuls les repos personnels sont pris en compte
-          repositories_affiliations: owner, collaborator, organization_member
-
-          # 141 repos depassent la fenetre par defaut (100) : les repos
-          # perso en sortaient, d'ou stars/releases/licence a zero
-          repositories: 200
+          # organization_member met stars/releases/licence/lignes a zero,
+          # on reste donc sur les repos personnels pour ces agregats
+          # (les commits et contributions d'org viennent du token, pas d'ici)
 
           # par defaut seuls 4 repos sont analyses pour les lignes
           plugin_lines_repositories_limit: 0
