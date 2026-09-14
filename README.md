@@ -1,8 +1,10 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header-dark.svg">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header.svg" alt="Léonard Leroy — Epitech Lyon, 2024—2026" width="880">
-  </picture>
+  <a href="https://leonardleroy.me/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header-dark.svg">
+      <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header.svg" alt="Léonard Leroy — Epitech Lyon, 2024—2026" width="880">
+    </picture>
+  </a>
 </p>
 
 ---
@@ -29,16 +31,16 @@ I gained practical experience during a five-month internship at **EDF**, where I
 
 ### III · Selected work
 
-**01 · [Zappy](https://github.com/LeonardLeroy/Zappy)** — Networked multiplayer strategy game over a custom text protocol. C++20 server driving the world simulation and every client, C++20/raylib GUI with 2D and 3D views plus session recording and replay, and a fully autonomous Python AI client.
+**01 · [Zappy](https://github.com/LeonardLeroy/Zappy)** — Networked multiplayer strategy game over a custom text protocol. C++20 server driving the world simulation and every client, C++20/raylib GUI with 2D and 3D views plus session recording and replay, and a fully autonomous Python AI client.<br>
 <sub>C++ · raylib · Python · ECS · Networking</sub>
 
-**02 · [42sh](https://github.com/LeonardLeroy/42sh)** — Fully functional Unix shell written in C. Advanced parsing, process handling, job control and custom built-ins.
+**02 · [42sh](https://github.com/LeonardLeroy/42sh)** — Fully functional Unix shell written in C. Advanced parsing, process handling, job control and custom built-ins.<br>
 <sub>C · Parsing · Processes · Job control</sub>
 
-**03 · [Wolf3D](https://github.com/LeonardLeroy/Wolf3d)** — 2.5D game engine built from scratch in C. Procedural map generator, raycasting renderer, entity system for enemies and animations.
+**03 · [Wolf3D](https://github.com/LeonardLeroy/Wolf3d)** — 2.5D game engine built from scratch in C. Procedural map generator, raycasting renderer, entity system for enemies and animations.<br>
 <sub>C · Raycasting · Procedural generation</sub>
 
-**04 · [My_Radar](https://github.com/LeonardLeroy/My_Radar)** — High-performance 2D air traffic simulator. Collision detection optimized with spatial partitioning: 30,000+ simultaneous entities at 60 FPS.
+**04 · [My_Radar](https://github.com/LeonardLeroy/My_Radar)** — High-performance 2D air traffic simulator. Collision detection optimized with spatial partitioning: 30,000+ simultaneous entities at 60 FPS.<br>
 <sub>C · Spatial partitioning · 60 FPS</sub>
 
 ---
@@ -67,6 +69,5 @@ I gained practical experience during a five-month internship at **EDF**, where I
 **LinkedIn** — [leonardleroy1](https://www.linkedin.com/in/leonardleroy1)
 
 <br>
-
 <sub>Lyon, France</sub>
 <img src="https://komarev.com/ghpvc/?username=LeonardLeroy&color=0f766e&style=flat&label=Views" alt="Profile views" align="right">

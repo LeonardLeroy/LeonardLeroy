@@ -69,13 +69,13 @@ jobs:
             .field svg { fill: #6b6b6b !important; }
             .added { color: #0f766e !important; }
             .removed { color: #6b6b6b !important; }
-            :root {
-              --color-calendar-graph-day-bg: #f0faf8;
-              --color-calendar-graph-day-L1-bg: #99f6e4;
-              --color-calendar-graph-day-L2-bg: #5eead4;
-              --color-calendar-graph-day-L3-bg: #14b8a6;
-              --color-calendar-graph-day-L4-bg: #0f766e;
-            }
+            /* metrics peint chaque case en attribut fill=, pas via les
+               variables --color-calendar-* : on cible donc la valeur */
+            .day[fill="#ebedf0"] { fill: #f0faf8; }
+            .day[fill="#9be9a8"] { fill: #99f6e4; }
+            .day[fill="#40c463"] { fill: #5eead4; }
+            .day[fill="#30a14e"] { fill: #14b8a6; }
+            .day[fill="#216e39"] { fill: #0f766e; }
 
       - name: Generate Stats Metrics (dark)
         uses: lowlighter/metrics@v3.34
@@ -112,13 +112,13 @@ jobs:
             .field svg { fill: #8b949e !important; }
             .added { color: #2dd4bf !important; }
             .removed { color: #8b949e !important; }
-            :root {
-              --color-calendar-graph-day-bg: #161b22;
-              --color-calendar-graph-day-L1-bg: #0f766e;
-              --color-calendar-graph-day-L2-bg: #14b8a6;
-              --color-calendar-graph-day-L3-bg: #5eead4;
-              --color-calendar-graph-day-L4-bg: #99f6e4;
-            }
+            /* metrics peint chaque case en attribut fill=, pas via les
+               variables --color-calendar-* : on cible donc la valeur */
+            .day[fill="#ebedf0"] { fill: #161b22; }
+            .day[fill="#9be9a8"] { fill: #0f766e; }
+            .day[fill="#40c463"] { fill: #14b8a6; }
+            .day[fill="#30a14e"] { fill: #5eead4; }
+            .day[fill="#216e39"] { fill: #99f6e4; }
 
       # ------------------------------------------------------------------
       # Repartition des langages. Les couleurs des langages restent celles
