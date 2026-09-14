@@ -1,9 +1,6 @@
 <p align="center">
   <a href="https://leonardleroy.me/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header-dark.svg">
-      <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header.svg" alt="Léonard Leroy — Epitech Lyon, 2024—2026" width="880">
-    </picture>
+    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/header.svg" alt="Léonard Leroy — Epitech Lyon, 2024—2026" width="880">
   </a>
 </p>
 
@@ -48,14 +45,8 @@ I gained practical experience during a five-month internship at **EDF**, where I
 ### IV · Activity
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs-dark.svg">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs.svg" alt="Most used languages" width="400" align="top">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en-dark.svg">
-    <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg?v=3" alt="GitHub statistics" width="385" align="top">
-  </picture>
+  <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/langs.svg" alt="Most used languages" width="400" align="top">
+  <img src="https://raw.githubusercontent.com/LeonardLeroy/LeonardLeroy/main/.github/assets/images/stats_en.svg?v=4" alt="GitHub statistics" width="385" align="top">
 </p>
 
 ---
