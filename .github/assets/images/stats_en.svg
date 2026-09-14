@@ -15,7 +15,9 @@ h1, h2 {
  text-transform: uppercase;
  margin: 16px 0 6px !important;
 }
-.field { color: #0a0a0a; }
+/* #0a0a0a est invisible sur le fond sombre de GitHub (1.05) :
+ le gris de la palette passe sur les deux fonds (5.33 / 3.55) */
+.field { color: #6b6b6b !important; }
 .field svg { fill: #6b6b6b !important; }
 .added { color: #0f766e !important; }
 .removed { color: #6b6b6b !important; }
@@ -65,7 +67,7 @@ h1, h2 {
                                     <rect class="day" x="150" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                                     <rect class="day" x="165" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                     <rect class="day" x="180" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
-                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                                    <rect class="day" x="195" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                                 </g>
                             </svg>
                         </div>
@@ -91,7 +93,7 @@ h1, h2 {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            1977 Commits
+                            1981 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
