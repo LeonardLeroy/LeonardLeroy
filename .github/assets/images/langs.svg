@@ -28,23 +28,23 @@ svg {
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="294.51222627613004" height="8" fill="#555555"/>
-                    <rect mask="url(#languages-bar)" x="294.51222627613004" y="0" width="47.74346944837275" height="8" fill="#f34b7d"/>
-                    <rect mask="url(#languages-bar)" x="342.25569572450274" y="0" width="41.15018396651806" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="383.4058796910208" y="0" width="22.96145785896581" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="406.3673375499866" y="0" width="22.06428383835597" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="428.43162138834253" y="0" width="11.568410858198702" height="8" fill="#df7900"/>
-                    <rect mask="url(#languages-bar)" x="440.00003224654125" y="0" width="6.368476927778854" height="8" fill="#427819"/>
-                    <rect mask="url(#languages-bar)" x="446.36850917432014" y="0" width="5.3165410066725265" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="451.6850501809927" y="0" width="2.730336148695251" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="454.4153863296879" y="0" width="1.8761790141659054" height="8" fill="#5686a5"/>
-                    <rect mask="url(#languages-bar)" x="456.29156534385385" y="0" width="1.1387937715447203" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="457.4303591153986" y="0" width="1.044766440092913" height="8" fill="#02f88c"/>
-                    <rect mask="url(#languages-bar)" x="458.47512555549145" y="0" width="0.920248212377154" height="8" fill="#DA3434"/>
-                    <rect mask="url(#languages-bar)" x="459.3953737678686" y="0" width="0.2306595098454065" height="8" fill="#336790"/>
-                    <rect mask="url(#languages-bar)" x="459.626033277714" y="0" width="0.22950580025704076" height="8" fill="#6E4C13"/>
-                    <rect mask="url(#languages-bar)" x="459.85553907797106" y="0" width="0.07540316238247478" height="8" fill="#0298c3"/>
-                    <rect mask="url(#languages-bar)" x="459.9309422403535" y="0" width="0.06905775964646325" height="8" fill="#384d54"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="288.0478618042092" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="288.0478618042092" y="0" width="46.69552929467967" height="8" fill="#f34b7d"/>
+                    <rect mask="url(#languages-bar)" x="334.7433910988889" y="0" width="40.31555219531597" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="375.0589432942049" y="0" width="32.5483046608139" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="407.60724795501875" y="0" width="21.58361316672697" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="429.19086112174574" y="0" width="11.314491266832713" height="8" fill="#df7900"/>
+                    <rect mask="url(#languages-bar)" x="440.5053523885784" y="0" width="6.228692727602451" height="8" fill="#427819"/>
+                    <rect mask="url(#languages-bar)" x="446.7340451161809" y="0" width="5.199846160989545" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="451.93389127717046" y="0" width="2.6704069287127896" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="454.6042982058832" y="0" width="1.834998024447787" height="8" fill="#5686a5"/>
+                    <rect mask="url(#languages-bar)" x="456.439296230331" y="0" width="1.0474649416138904" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="457.4867611719449" y="0" width="1.0218344513527935" height="8" fill="#02f88c"/>
+                    <rect mask="url(#languages-bar)" x="458.5085956232977" y="0" width="0.9000493230995933" height="8" fill="#DA3434"/>
+                    <rect mask="url(#languages-bar)" x="459.4086449463973" y="0" width="0.22559667371324094" height="8" fill="#336790"/>
+                    <rect mask="url(#languages-bar)" x="459.6342416201106" y="0" width="0.22446828734954483" height="8" fill="#6E4C13"/>
+                    <rect mask="url(#languages-bar)" x="459.85870990746014" y="0" width="0.07374810877013771" height="8" fill="#0298c3"/>
+                    <rect mask="url(#languages-bar)" x="459.9324580162302" y="0" width="0.06754198376980919" height="8" fill="#384d54"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -56,7 +56,7 @@ svg {
                                 C
                             </div>
                             <small>
-                                <div>64.02%</div>
+                                <div>62.62%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -67,7 +67,7 @@ svg {
                                 JavaScript
                             </div>
                             <small>
-                                <div>8.95%</div>
+                                <div>8.76%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -78,7 +78,7 @@ svg {
                                 Python
                             </div>
                             <small>
-                                <div>4.8%</div>
+                                <div>4.69%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -89,7 +89,7 @@ svg {
                                 Makefile
                             </div>
                             <small>
-                                <div>1.38%</div>
+                                <div>1.35%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -100,7 +100,7 @@ svg {
                                 HTML
                             </div>
                             <small>
-                                <div>0.59%</div>
+                                <div>0.58%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -111,7 +111,7 @@ svg {
                                 Shell
                             </div>
                             <small>
-                                <div>0.25%</div>
+                                <div>0.23%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -144,7 +144,7 @@ svg {
                                 Dockerfile
                             </div>
                             <small>
-                                <div>0.02%</div>
+                                <div>0.01%</div>
                             </small>
                         </div>
                     </section>
@@ -157,7 +157,7 @@ svg {
                                 C++
                             </div>
                             <small>
-                                <div>10.38%</div>
+                                <div>10.15%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -168,7 +168,7 @@ svg {
                                 TypeScript
                             </div>
                             <small>
-                                <div>4.99%</div>
+                                <div>7.08%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -179,7 +179,7 @@ svg {
                                 Haxe
                             </div>
                             <small>
-                                <div>2.51%</div>
+                                <div>2.46%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -190,7 +190,7 @@ svg {
                                 CSS
                             </div>
                             <small>
-                                <div>1.16%</div>
+                                <div>1.13%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -201,7 +201,7 @@ svg {
                                 GLSL
                             </div>
                             <small>
-                                <div>0.41%</div>
+                                <div>0.4%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -212,7 +212,7 @@ svg {
                                 Ada
                             </div>
                             <small>
-                                <div>0.23%</div>
+                                <div>0.22%</div>
                             </small>
                         </div>
                         <div class="field language details">
